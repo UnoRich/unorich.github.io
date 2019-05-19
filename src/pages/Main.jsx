@@ -7,7 +7,7 @@ class Main extends Component {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/resume" component={Resume} />
+        <Route path="/life" component={Home} />
         <Route component={NotFound} />
       </Switch>
     );
