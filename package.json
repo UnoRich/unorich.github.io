@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://unorich.github.io/",
   "dependencies": {
+    "@material-ui/core": "^4.0.1",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-react-app": "^3.0.8",
     "eslint-plugin-flowtype": "^3.6.1",

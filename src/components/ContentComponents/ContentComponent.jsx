@@ -6,6 +6,7 @@ import Life from 'components/ContentComponents/Lifes/Life';
 
 const Div = styled.div`
   margin-left: 40px;
+  min-height: 850px;
 `;
 
 class ContentComponent extends Component {

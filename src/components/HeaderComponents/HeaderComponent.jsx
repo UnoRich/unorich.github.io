@@ -4,8 +4,9 @@ import LifeLink from './LifeLink';
 import MainLink from './MainLink';
 
 const Div = styled.div`
-  margin: 40px;
   border: 5px outset pink;
+  display: flex;
+  justify-content: center;
 `;
 
 class HeaderComponent extends Component {

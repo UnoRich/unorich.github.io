@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import Main from 'pages/Main';
 import store from 'store';
 import './App.css';
+import 'styles/GlobalStyle.css';
 
 class App extends Component {
   render() {
