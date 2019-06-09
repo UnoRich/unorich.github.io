@@ -34,6 +34,7 @@ const BackDrop = styled.div`
   opacity: 0.4;
   &:hover {
     opacity: 0;
+    cursor: pointer;
   }
 `;
 

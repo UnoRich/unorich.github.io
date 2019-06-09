@@ -5,7 +5,7 @@ import Profile from 'components/ContentComponents/Profiles/Profile';
 import Life from 'components/ContentComponents/Lifes/Life';
 
 const Div = styled.div`
-  margin-left: 40px;
+  padding: 40px 40px 40px 40px;
   min-height: 850px;
 `;
 
