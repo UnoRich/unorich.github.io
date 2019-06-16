@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const TitleStyle = styled.div`
   display: inline-block;
-  color: black;
+  color: white;
   font-size: 50px;
 `;
 

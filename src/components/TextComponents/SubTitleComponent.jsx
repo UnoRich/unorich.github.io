@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import LineForSubTitle from 'components/LineComponents/LineForSubTItle';
 
 const SubTitleStyle = styled.div`
-  color: black;
+  color: white;
   font-size: 30px;
 `;
 

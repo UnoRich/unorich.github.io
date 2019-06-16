@@ -3,11 +3,16 @@ import TitleComponent from 'components/TextComponents/TitleComponent';
 import SubTitleComponent from 'components/TextComponents/SubTitleComponent';
 import HIghliteComponent from 'components/TextComponents/HighlightComponent';
 import ProfilePicture from 'components/ContentComponents/Profiles/ProfilePicture';
+import styled from 'styled-components';
+
+const Div = styled.div`
+  padding: 40px;
+`;
 
 class Profile extends Component {
   render() {
     return (
-      <div class="profile">
+      <Div class="profile">
         <TitleComponent title="Wonyeong Jung" />
         <ProfilePicture />
         <HIghliteComponent highlite="Software Developer" />
@@ -16,7 +21,7 @@ class Profile extends Component {
         <SubTitleComponent subtitle="EDUCATION" />
         <SubTitleComponent subtitle="TECHNOLOGIES" />
         <SubTitleComponent subtitle="PROJECTS" />
-      </div>
+      </Div>
     );
   }
 }

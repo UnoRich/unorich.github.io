@@ -23,6 +23,7 @@ const LinkText = styled.h1`
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  pointer-events: none;
 `;
 
 const BackDrop = styled.div`
@@ -36,25 +37,57 @@ const BackDrop = styled.div`
   }
 `;
 
+const WhiteBox = styled.div`
+  border: 2px solid;
+  border-color: white;
+  width: 120px
+  height: 50px
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:10;
+  pointer-events: none;
+`;
+
 class LifeLink extends Component {
   constructor() {
     super();
+    this.state = {
+      onMouseOver: false,
+    };
     this.handleLink = this.handleLink.bind(this);
+    this.handleMouseOver = this.handleMouseOver.bind(this);
+    this.handleMouseOut = this.handleMouseOut.bind(this);
   }
 
   handleLink() {
     window.location.hash = 'life';
   }
 
+  handleMouseOver() {
+    this.setState({ onMouseOver: true });
+  }
+
+  handleMouseOut() {
+    this.setState({ onMouseOver: false });
+  }
+
   render() {
     return (
-      <Div class="LifeLink" onClick={this.handleLink}>
+      <Div
+        class="LifeLink"
+        onClick={this.handleLink}
+        onMouseOver={this.handleMouseOver}
+        onMouseOut={this.handleMouseOut}
+      >
         <BackDrop />
         <LinkText>
           <Link to="life" style={{ color: 'white' }}>
             LIFE
           </Link>
         </LinkText>
+        {this.state.onMouseOver && <WhiteBox />}
       </Div>
     );
   }
