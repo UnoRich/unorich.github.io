@@ -7,6 +7,8 @@ import styled from 'styled-components';
 
 const Div = styled.div`
   padding: 40px;
+  position: relative;
+  z-index=1;
 `;
 
 class Profile extends Component {

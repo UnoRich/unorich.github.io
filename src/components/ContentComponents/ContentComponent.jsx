@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import Profile from 'components/ContentComponents/Profiles/Profile';
 import Life from 'components/ContentComponents/Lifes/Life';
 import FinnAndJakeImg from 'assets/Finn-and-jake.png';
+import NightSky from 'components/StarField/NightSky';
 
 const Div = styled.div`
   position: relative;
@@ -12,9 +13,8 @@ const Div = styled.div`
 `;
 
 const FinnAndJake = styled.img`
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
+  position: relative;
+  float: right;
 `;
 
 const waveMove = keyframes`
@@ -26,30 +26,27 @@ const waveMove = keyframes`
   }
 `;
 
-const WaveLayout = styled.div`
-  position: absolute;
-  top:49%
-  width: 130%
-  height: fit-contet;
-  animation: ${waveMove} 5s linear 1s infinite alternate;
-  z-index: -1;
-  transform: rotate(180deg);
-`;
+const WaveLayout = styled.div``;
 
-const NightSky = styled.div`
-  position: absolute;
+const StarField = styled.div`
+  position: relative;
   top: 0;
   width: 100%;
   height: 50%;
-  background-color: black;
-  z-index: -1;
+  background-color: #202225;
+  overflow: auto;
 `;
 
 class ContentComponent extends Component {
   render() {
     return (
-      <Div class={ContentComponent}>
+      <StarField class="star-field">
         <NightSky />
+        <Switch>
+          <Route exact path="/" component={Profile} />
+          <Route path="/life" component={Life} />
+        </Switch>
+        <FinnAndJake src={FinnAndJakeImg} />
         <WaveLayout>
           <svg
             class="wave-1hkxOo"
@@ -65,12 +62,7 @@ class ContentComponent extends Component {
             />
           </svg>
         </WaveLayout>
-        <Switch>
-          <Route exact path="/" component={Profile} />
-          <Route path="/life" component={Life} />
-        </Switch>
-        <FinnAndJake src={FinnAndJakeImg} />
-      </Div>
+      </StarField>
     );
   }
 }
