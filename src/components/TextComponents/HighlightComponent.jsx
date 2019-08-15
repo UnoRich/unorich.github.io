@@ -8,7 +8,7 @@ const HighliteStyle = styled.div`
 
 const HighliteComponent = props => {
   return (
-    <div class="sub-title">
+    <div className="highlited">
       <HighliteStyle>{props.highlite}</HighliteStyle>
     </div>
   );

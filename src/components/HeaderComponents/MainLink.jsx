@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import MainImg from 'assets/img_main.jpeg';
 
 const Div = styled.div`
-  border: 1px outset white;
   position: relative;
   height: 225px;
   width: 300px;
@@ -79,7 +78,7 @@ class MainLink extends Component {
   render() {
     return (
       <Div
-        class="MainLink"
+        className="MainLink"
         onClick={this.handleLink}
         onMouseOver={this.handleMouseOver}
         onMouseOut={this.handleMouseOut}

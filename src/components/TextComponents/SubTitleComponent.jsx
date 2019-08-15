@@ -9,7 +9,7 @@ const SubTitleStyle = styled.div`
 
 const SubTitleComponent = props => {
   return (
-    <div class="sub-title">
+    <div className="sub-title">
       <SubTitleStyle>{props.subtitle}</SubTitleStyle>
       <LineForSubTitle />
     </div>

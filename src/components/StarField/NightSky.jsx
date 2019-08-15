@@ -15,7 +15,7 @@ const NightSkyStyle = styled.div`
 class NightSky extends Component {
   render() {
     return (
-      <NightSkyStyle class="night-sky">
+      <NightSkyStyle className="night-sky">
         <StarsNear />
         <StarsMiddle />
         <StarsFall />

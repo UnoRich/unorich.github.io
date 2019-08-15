@@ -4,7 +4,6 @@ import LifeLink from './LifeLink';
 import MainLink from './MainLink';
 
 const Div = styled.div`
-  border: 5px outset pink;
   display: flex;
   justify-content: center;
 `;
@@ -12,7 +11,7 @@ const Div = styled.div`
 class HeaderComponent extends Component {
   render() {
     return (
-      <Div class="header">
+      <Div className="header">
         <MainLink />
         <LifeLink />
       </Div>

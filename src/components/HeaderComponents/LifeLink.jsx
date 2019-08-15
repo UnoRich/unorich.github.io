@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import LifeImg from 'assets/img_life.jpeg';
 
 const Div = styled.div`
-  border: 1px outset white;
   display: inline;
   position: relative;
   height: 225px;
@@ -76,7 +75,7 @@ class LifeLink extends Component {
   render() {
     return (
       <Div
-        class="LifeLink"
+        className="LifeLink"
         onClick={this.handleLink}
         onMouseOver={this.handleMouseOver}
         onMouseOut={this.handleMouseOut}

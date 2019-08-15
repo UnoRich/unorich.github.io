@@ -17,7 +17,7 @@ const ImgWrapper = styled.div`
 class ProfilePicture extends Component {
   render() {
     return (
-      <ImgWrapper class="profile-picture">
+      <ImgWrapper className="profile-picture">
         <ImgStyle src={LifeImg} />
       </ImgWrapper>
     );

@@ -8,7 +8,7 @@ const ButtonToNavigate = ({ title, history }) => (
 
 class Life extends Component {
   render() {
-    return <div class="life">Life</div>;
+    return <div className="life">Life</div>;
   }
 }
 
