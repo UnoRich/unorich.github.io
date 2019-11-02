@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HighliteStyle = styled.div`
-  color: red;
+  color: #f35959;
   font-size: 24px;
 `;
 

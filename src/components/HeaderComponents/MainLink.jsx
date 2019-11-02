@@ -5,19 +5,17 @@ import MainImg from 'assets/img_main.jpeg';
 
 const Div = styled.div`
   position: relative;
-  height: 225px;
-  width: 300px;
+  height: 150px;
+  width: 200px;
   background-image: url('${MainImg}');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  &:hover {
-    background-color: yellow;
-  }
   z-index: 1;
 `;
 
 const LinkText = styled.h1`
+  letter-spacing: 3px;
   margin: 0;
   text-align: center;
   position: absolute;
@@ -31,7 +29,7 @@ const LinkText = styled.h1`
 const BackDrop = styled.div`
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #202225;
   opacity: 0.4;
   &:hover {
     opacity: 0;
@@ -42,7 +40,7 @@ const BackDrop = styled.div`
 const WhiteBox = styled.div`
   border: 2px solid;
   border-color: white;
-  width: 120px
+  width: 160px
   height: 50px
   position: absolute;
   top: 50%;
@@ -84,7 +82,7 @@ class MainLink extends Component {
         onMouseOut={this.handleMouseOut}
       >
         <BackDrop />
-        <LinkText>HOME</LinkText>
+        <LinkText>PROFILE</LinkText>
         {this.state.onMouseOver && <WhiteBox />}
       </Div>
     );

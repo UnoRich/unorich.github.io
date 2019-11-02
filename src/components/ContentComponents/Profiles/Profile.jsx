@@ -4,6 +4,7 @@ import SubTitleComponent from 'components/TextComponents/SubTitleComponent';
 import HIghliteComponent from 'components/TextComponents/HighlightComponent';
 import ProfilePicture from 'components/ContentComponents/Profiles/ProfilePicture';
 import styled from 'styled-components';
+import githubIcon from 'assets/github_icon.svg'
 
 const Div = styled.div({
   padding: 40,
@@ -36,13 +37,29 @@ const StyledDetailDescription = styled.span({
   fontWeight: 'normal',
 });
 
+const StyledGithubIcon = styled.img({
+  marginTop: 30,
+  '&:hover': {
+    cursor: 'pointer',
+  }
+});
+
 class Profile extends Component {
+  constructor() {
+    super();
+    this.handleGihubLink = this.handleGihubLink.bind(this);
+  }
+
+  handleGihubLink() {
+    window.location="https://github.com/UnoRich"
+  }
+
   render() {
     return (
       <Div className="profile">
         <TitleComponent title="Wonyeong Jung (Warren Jung)" />
         <ProfilePicture />
-        <HIghliteComponent highlite="Software Developer" />
+        <HIghliteComponent highlite="Software Developer"/>
         <SubTitleComponent subtitle="PERSONAL SUMMARY" />
         <StyledDescription>
           Love Web platform. <br/>
@@ -115,6 +132,14 @@ class Profile extends Component {
             - D2 Campus Fest 2017 (Open Source Competition by held “Naver”) Finalist<br/>
           </StyledDetailDescription>
         </StyledDescription>
+        <StyledGithubIcon
+          src={githubIcon}
+          alt="Unorich github profile"
+          height="65"
+          width="68"
+          onClick={this.handleGihubLink}>
+        </StyledGithubIcon>
+
       </Div>
     );
   }

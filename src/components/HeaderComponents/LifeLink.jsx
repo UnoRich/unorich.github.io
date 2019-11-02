@@ -6,8 +6,8 @@ import LifeImg from 'assets/img_life.jpeg';
 const Div = styled.div`
   display: inline;
   position: relative;
-  height: 225px;
-  width: 300px;
+  height: 15opx;
+  width: 200px;
   background-image: url('${LifeImg}');
   background-size: contain;
   background-repeat: no-repeat;
@@ -15,6 +15,7 @@ const Div = styled.div`
 `;
 
 const LinkText = styled.h1`
+  letter-spacing: 3px;
   margin: 0;
   text-align: center;
   position: absolute;
@@ -28,7 +29,7 @@ const LinkText = styled.h1`
 const BackDrop = styled.div`
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #202225;
   opacity: 0.4;
   &:hover {
     opacity: 0;
