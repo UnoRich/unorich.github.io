@@ -8,7 +8,6 @@ class TailComponent extends Component {
   render() {
     return (
       <Div className="tail">
-        Tail
       </Div>
     );
   }

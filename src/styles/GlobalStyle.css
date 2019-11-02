@@ -13,7 +13,7 @@ a {
   height: 100%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  animation: starFieldAnimation 200s linear infinite;
+  animation: starFieldAnimation 50s linear infinite;
 }
 
 .starsMiddle-3JKoQa {
@@ -22,7 +22,7 @@ a {
   height: 100%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  animation: starFieldAnimation 400s linear infinite;
+  animation: starFieldAnimation 100s linear infinite;
 }
 
 .starsFar-2vv26w {
@@ -31,7 +31,7 @@ a {
   height: 100%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  animation: starFieldAnimation 600s linear infinite;
+  animation: starFieldAnimation 150s linear infinite;
 }
 
 .leftConstellation-OiQA13 {
